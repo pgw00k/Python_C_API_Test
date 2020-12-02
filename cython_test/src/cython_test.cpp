@@ -6,11 +6,27 @@
 
 int main()
 {
-	compile_test();
-	marshal_test();
 
-	int *c;
-	scanf_s("%d",&c);
+	int c = 0;
+	scanf_s("%d", &c);
+
+	switch (c)
+	{
+	case 1:
+		compile_test();
+		break;
+	case 2:
+		marshal_test();
+		break;
+	case 3:
+		runfile_test();
+		break;
+	case 4:
+		import_test();
+		break;
+	}
+
+	scanf_s("%d", &c);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

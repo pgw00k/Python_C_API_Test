@@ -24,6 +24,8 @@
   <ItemGroup>
     <ClCompile Include="src\cython_001_marshal_test.cpp" />
     <ClCompile Include="src\cython_002_compile_test.cpp" />
+    <ClCompile Include="src\cython_003_runfile_test.cpp" />
+    <ClCompile Include="src\cython_004_import_test.cpp" />
     <ClCompile Include="src\cython_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
