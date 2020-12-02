@@ -85,6 +85,8 @@ int compile_test()
 
 	UHeader.bytes = cc;
 
+	// 跳过 Py_String_ObjectHeader 12 字节 开始读取 MarshalString
+	// 由于只有这里开头会保留 8 字节长度的 数据 和默认生成的 魔数 和 时间戳对齐，所以长度要 + 8
 	fwrite(cc+12, 1, UHeader.header->Size+8, pyf);
 
 	fflush(pyf);
