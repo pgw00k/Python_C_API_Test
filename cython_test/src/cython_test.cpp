@@ -3,6 +3,22 @@
 
 #include "cython_test.h"
 #include<iostream>
+#include <Windows.h>
+
+inline HMODULE ModuleHandleByAddr(const void* ptrAddr)
+{
+	MEMORY_BASIC_INFORMATION info;
+	VirtualQuery(ptrAddr, &info, sizeof(info));
+	return (HMODULE)info.AllocationBase;
+}
+/*
+ µ±Ç°Ä£¿é¾ä±ú
+*/
+inline HMODULE ThisModuleHandle()
+{
+	static HMODULE sInstance = ModuleHandleByAddr((void*)&ThisModuleHandle);
+	return sInstance;
+}
 
 int main()
 {
@@ -23,6 +39,9 @@ int main()
 		break;
 	case 4:
 		import_test();
+		break;
+	case 5:
+		module_test();
 		break;
 	}
 

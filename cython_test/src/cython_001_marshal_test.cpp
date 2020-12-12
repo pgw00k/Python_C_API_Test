@@ -65,6 +65,7 @@ int marshal_test()
 #endif
 
 	PyRun_SimpleString("import tm\ntm.print_func('CPP')");
+	PyErr_Print();
 
 	int* c;
 	scanf_s("%d", &c);

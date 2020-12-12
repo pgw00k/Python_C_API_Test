@@ -26,6 +26,8 @@
     <ClCompile Include="src\cython_002_compile_test.cpp" />
     <ClCompile Include="src\cython_003_runfile_test.cpp" />
     <ClCompile Include="src\cython_004_import_test.cpp" />
+    <ClCompile Include="src\cython_005_module_test.cpp" />
+    <ClCompile Include="src\cython_006_thread_test.cpp" />
     <ClCompile Include="src\cython_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -82,8 +84,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Program\Python2703_x86\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Program\Python2703_x86\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Program\Python2718_x86\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program\Python2718_x86\libs;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)</OutDir>
     <IntDir>$(SolutionDir)\$(Configuration)\$(Platform)\tmp</IntDir>
   </PropertyGroup>
