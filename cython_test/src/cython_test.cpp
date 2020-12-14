@@ -43,6 +43,9 @@ int main()
 	case 5:
 		module_test();
 		break;
+	case 7:
+		method_test();
+		break;
 	}
 
 	scanf_s("%d", &c);

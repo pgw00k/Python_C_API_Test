@@ -6,3 +6,4 @@ int runfile_test();
 int import_test();
 int module_test();
 int thread_test();
+int method_test();

@@ -28,6 +28,7 @@
     <ClCompile Include="src\cython_004_import_test.cpp" />
     <ClCompile Include="src\cython_005_module_test.cpp" />
     <ClCompile Include="src\cython_006_thread_test.cpp" />
+    <ClCompile Include="src\cython_007_method_test.cpp" />
     <ClCompile Include="src\cython_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
