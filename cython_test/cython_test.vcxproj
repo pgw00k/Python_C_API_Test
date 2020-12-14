@@ -85,8 +85,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Program\Python2718_x86\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Program\Python2718_x86\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Program\Python2718_x86\include;D:\Paths\py2718_x86\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Paths\py2718_x86\libs;D:\Program\Python2718_x86\libs;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)</OutDir>
     <IntDir>$(SolutionDir)\$(Configuration)\$(Platform)\tmp</IntDir>
   </PropertyGroup>

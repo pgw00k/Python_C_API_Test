@@ -2,7 +2,7 @@
 //
 
 #include "cython_test.h"
-#include<iostream>
+#include <iostream>
 #include <Windows.h>
 
 inline HMODULE ModuleHandleByAddr(const void* ptrAddr)
